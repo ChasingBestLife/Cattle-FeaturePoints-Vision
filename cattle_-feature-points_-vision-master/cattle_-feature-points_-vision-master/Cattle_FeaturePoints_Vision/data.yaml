@@ -1,0 +1,15 @@
+#root:
+train: dataset\FivePoints_datasets\images\train
+val: dataset\FivePoints_datasets\images\val
+
+nc: 5                       # 类别数量
+
+names:
+  - cattle_eye_left
+  - cattle_eye_right
+  - cattle_horm_left
+  - cattle_horm_right
+  - cattle_forehead
+
+kpt_shape: [5, 3]          # 关键点数量和维度
+
