@@ -1,2 +1,27 @@
-# Cattle-FeaturePoints-Vision
-使用YOLOv8-CA识别牛头关键点
+# Cattle_FeaturePoints_Vision
+## 项目概述
+#### 介绍
+基于小样本学习方式，训练YOLOv8-CA模型精准识别牛头骨关键点
+
+![关键点标注格式](https://foruda.gitee.com/images/1751008617788665949/d10cd740_15981429.png "图片1.png")
+
+#### 软件架构
+该项目包括数据增强、模型训练、模型应用、模型量化等的全流程代码
+
+#### 安装教程
+
+安装conda运行环境
+- python--3.10.16
+- torch--2.6.0+cu118
+- numpy--1.26.4
+- opencv-python--4.11.0.86
+- matplotlib--3.8.4
+- tqdm--4.67.1
+
+## 基础版
+安装相应环境，按顺序执行py文件即可（文件里面的路径需要修改），如果使用预训练权重模型（.pt文件）进行训练，则不需要执行[B1]代码
+
+## 进阶版
+ultralytics有优化的YOLO架构
+- 使用保存架构的yaml文件进行训练
+- 如果想快速提高精度，则使用代码[B1]
